@@ -5,7 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkoutmaster
+        uses: actions/checkout@master
+
       - name: vuepress-deploy
         uses: jenkey2011/vuepress-deploy@master
         env:
@@ -14,4 +15,4 @@ jobs:
           TARGET_BRANCH: master
           BUILD_SCRIPT: yarn && yarn build
           BUILD_DIR: src/.vuepress/dist
-#          CNAME: https://www.xxx.com
+  #          CNAME: https://www.xxx.com
