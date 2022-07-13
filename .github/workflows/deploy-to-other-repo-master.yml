@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: A-TO-B:MASTER
 on: [push]
 jobs:
   build-and-deploy:
