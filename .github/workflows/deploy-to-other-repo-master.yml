@@ -1,5 +1,8 @@
 name: A-TO-B:MASTER
-on: [push]
+on:
+  push:
+    branches:
+      - target
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
