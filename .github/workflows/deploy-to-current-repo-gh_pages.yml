@@ -2,7 +2,7 @@ name: A TO A:GH_PAGES
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
